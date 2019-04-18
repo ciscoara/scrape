@@ -56,7 +56,7 @@ app.get("/scrape", function(req, res) {
 });
 
 app.get("/articles", function (req, res) {
-  db.Article.find({}).sort({dateScraped: -1}).limit(25).then(function (dbArticle) {
+  db.Article.find({}).sort({dateScraped: -1}).limit(5).then(function (dbArticle) {
     var hbsobj = {
       article: dbArticle
     }
