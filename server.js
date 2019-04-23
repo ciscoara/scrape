@@ -68,6 +68,6 @@ app.listen(PORT, function() {
   console.log("App running at http://localhost:" + PORT);
 });
 
-app.get("/note", function (req, res) {
-  console.log("note page")
+app.get("/comment", function (req, res) {
+  console.log("comment page")
 })

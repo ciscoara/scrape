@@ -10,13 +10,13 @@ var SavedArticleSchema = new Schema({
         type: String,
         required: true
     },
-    noteTitle: {
+    commentTitle: {
         type: String
     },
-    note: {
+    comment: {
         type: String
     },
-    noteDate: {
+    commentDate: {
         type: Date,
         default: Date.now
     }
